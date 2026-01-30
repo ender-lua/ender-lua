@@ -64,7 +64,7 @@ local function add(text,buttonname,typ)
 	b.BorderSizePixel=2
 	b.Size=UDim2.new(1,0,0.055,0)
 end	
-add("作者:dotoyn4","a_0","TextLabel")
+add("作者:dotoyn4(白龙)","a_0","TextLabel")
 add("在脚下生成方块","a_1","TextButton")
 local button=cframe:WaitForChild("a_1")
 local turn=true
@@ -186,10 +186,10 @@ z_1.MouseButton1Click:Connect(function()
 				z_2.Text="等待破解..."
 				b_z=true
 				b_zz=true
-				
+				rep=-100
 				break
 			elseif b_zzz == false and b_zzzz == floor_num then	
-				b_zzzz=-100
+			    rep=-100
 				z_2.Text="成功"
 				b_z=true
 				b_zz=true
@@ -242,5 +242,6 @@ button_5.MouseButton1Click:Connect(function()
 
 	
 end)
+
 
 
