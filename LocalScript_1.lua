@@ -139,7 +139,7 @@ Instance.new("UIListLayout").Parent=fram
 add("ceazy math","d_0","TextLabel")
 local a_2=cframe:WaitForChild("d_0")
 a_2.Parent=fram
-add("当前层级>","d","TextLable")
+add("当前层级>","d","TextLabel")
 local z=cframe:WaitForChild("d")
 z.Parent=fram
 
@@ -171,7 +171,6 @@ end)
 local b_z=true
 local b_zz=true
 z_1.MouseButton1Click:Connect(function()
-	if floor_num == -1 then return end
 	if b_z then
 		b_z=false
 		for i = 1, 100000 do
@@ -214,6 +213,7 @@ button_5.MouseButton1Click:Connect(function()
 
 	
 end)
+
 
 
 
