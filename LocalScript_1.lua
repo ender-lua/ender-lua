@@ -139,7 +139,7 @@ Instance.new("UIListLayout").Parent=fram
 add("ceazy math","d_0","TextLabel")
 local a_2=cframe:WaitForChild("d_0")
 a_2.Parent=fram
-add("请输入当前层级:","d","TextBox")
+add("当前层级>","d","TextLable")
 local z=cframe:WaitForChild("d")
 z.Parent=fram
 
@@ -161,12 +161,13 @@ fram.Visible=false
 
 local floor_num=-1
 
-z.FocusLost:Connect(function(p)
-	if not p then return end
-	if not tonumber(z.Text) then return end
-	floor_num=tonumber(z.Text)
-	
+
+
+game:GetService("ReplicatedStorage").ShowQuizUI.OnClientEvent:Connect(function(a,b)
+    z.Text="当前层级:"..tostring(a)
+    floor_num=a
 end)
+
 local b_z=true
 local b_zz=true
 z_1.MouseButton1Click:Connect(function()
@@ -182,7 +183,6 @@ z_1.MouseButton1Click:Connect(function()
 				z_2.Text="等待破解..."
 				b_z=true
 				b_zz=true
-				z.Text="请输入当前层级:"
 				break
 			end
 		end
@@ -214,5 +214,6 @@ button_5.MouseButton1Click:Connect(function()
 
 	
 end)
+
 
 
