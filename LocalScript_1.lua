@@ -64,12 +64,12 @@ local function add(text,buttonname,typ)
 	b.BorderSizePixel=2
 	b.Size=UDim2.new(1,0,0.055,0)
 end	
-add("×÷Õß:dotoyn4","a_0","TextLabel")
-add("ÔÚ½ÅÏÂÉú³É·½¿é","a_1","TextButton")
+add("ä½œè€…:dotoyn4","a_0","TextLabel")
+add("åœ¨è„šä¸‹ç”Ÿæˆæ–¹å—","a_1","TextButton")
 local button=cframe:WaitForChild("a_1")
 local turn=true
 button.MouseButton1Click:Connect(function()
-	if turn then turn=false button.Text="ÔÚ½ÅÏÂÉú³É·½¿é(¿ª)" else turn=true button.Text="ÔÚ½ÅÏÂÉú³É·½¿é(¹Ø)" end
+	if turn then turn=false button.Text="åœ¨è„šä¸‹ç”Ÿæˆæ–¹å—(å¼€)" else turn=true button.Text="åœ¨è„šä¸‹ç”Ÿæˆæ–¹å—(å…³)" end
 	while true do
 		if turn then break end
 		wait(0.1)
@@ -83,7 +83,7 @@ button.MouseButton1Click:Connect(function()
 	end	
 	
 end)
-add("ÊäÈëËÙ¶È","a_2","TextBox")
+add("è¾“å…¥é€Ÿåº¦","a_2","TextBox")
 local button_2=cframe:WaitForChild("a_2")
 button_2.FocusLost:Connect(function(p)
 	if not p then return end
@@ -92,7 +92,7 @@ button_2.FocusLost:Connect(function(p)
 	char.Humanoid.WalkSpeed=num
 	button_2.Text=""
 end)
-add("ÌøÔ¾¸ß¶È","a_3","TextBox")
+add("è·³è·ƒé«˜åº¦","a_3","TextBox")
 local button_3=cframe:WaitForChild("a_3")
 button_3.FocusLost:Connect(function(p)
 	if not p then return end
@@ -100,11 +100,11 @@ button_3.FocusLost:Connect(function(p)
 	char.Humanoid.JumpPower=tonumber(button_3.Text)
 	button_3.Text=""
 end)
-add("´©Ç½","a_4","TextButton")
+add("ç©¿å¢™","a_4","TextButton")
 local button_4=cframe:WaitForChild("a_4")
 local turn=true
 button_4.MouseButton1Click:Connect(function()
-	if turn then turn=false button_4.Text="´©Ç½(¿ª)" else turn=true button_4.Text="´©Ç½(¹Ø)" end
+	if turn then turn=false button_4.Text="ç©¿å¢™(å¼€)" else turn=true button_4.Text="ç©¿å¢™(å…³)" end
 	while true do
 		task.wait(0.1)
 		if turn then 
@@ -124,7 +124,7 @@ button_4.MouseButton1Click:Connect(function()
 	end	
 end)
 
-add("creazy math ½Å±¾","a_5","TextButton")
+add("creazy math è„šæœ¬","a_5","TextButton")
 local button_5=cframe:WaitForChild("a_5")
 local b_n=true
 local fram=Instance.new("ScrollingFrame") 
@@ -139,20 +139,20 @@ Instance.new("UIListLayout").Parent=fram
 add("ceazy math","d_0","TextLabel")
 local a_2=cframe:WaitForChild("d_0")
 a_2.Parent=fram
-add("ÇëÊäÈëµ±Ç°²ã¼¶:","d","TextBox")
+add("è¯·è¾“å…¥å½“å‰å±‚çº§:","d","TextBox")
 local z=cframe:WaitForChild("d")
 z.Parent=fram
 
-add("¿ªÊ¼ÆÆ½â","d_1","TextButton")
+add("å¼€å§‹ç ´è§£","d_1","TextButton")
 local z_1=cframe:WaitForChild("d_1")
 z_1.Parent=fram
 
 
-add("µÈ´ıÆÆ½â...","d_2","TextLabel")
+add("ç­‰å¾…ç ´è§£...","d_2","TextLabel")
 local z_2=cframe:WaitForChild("d_2")
 z_2.Parent=fram
 
-add("Í£Ö¹","d_3","TextButton")
+add("åœæ­¢","d_3","TextButton")
 local z_3=cframe:WaitForChild("d_3")
 z_3.Parent=fram
 
@@ -165,7 +165,7 @@ z.FocusLost:Connect(function(p)
 	if not p then return end
 	if not tonumber(z.Text) then return end
 	floor_num=tonumber(z.Text)
-	z.Text="done"
+	
 end)
 local b_z=true
 local b_zz=true
@@ -177,12 +177,12 @@ z_1.MouseButton1Click:Connect(function()
 			task.wait(0.1)
 			game:GetService("ReplicatedStorage").QuizClearEvent:FireServer(floor_num,i)
 			
-			z_2.Text="³¢ÊÔÊı×Ö>"..i
+			z_2.Text="å°è¯•æ•°å­—>"..i
 			if b_zz == false then
-				z_2.Text="µÈ´ıÆÆ½â..."
+				z_2.Text="ç­‰å¾…ç ´è§£..."
 				b_z=true
 				b_zz=true
-				z.Text="ÇëÊäÈëµ±Ç°²ã¼¶:"
+				z.Text="è¯·è¾“å…¥å½“å‰å±‚çº§:"
 				break
 			end
 		end
@@ -214,4 +214,5 @@ button_5.MouseButton1Click:Connect(function()
 
 	
 end)
+
 
