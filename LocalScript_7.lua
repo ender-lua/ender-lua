@@ -347,6 +347,7 @@ a_10.MouseButton1Click:Connect(function()
 	for i,pl in ipairs(game:GetService("Players"):GetPlayers()) do
 		add(pl.Name,pl.Name,"TextButton")
 		local a=cframe:WaitForChild(pl.Name)
+		a.TextScaled=true
 		a.Parent=a_10_1
 		a.ZIndex=0
 	end
@@ -384,5 +385,6 @@ a_10.MouseButton1Click:Connect(function()
 		a_10.Interactable=true
 	end
 end)
+
 
 
