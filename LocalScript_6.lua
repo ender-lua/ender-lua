@@ -64,7 +64,7 @@ local function add(text,buttonname,typ)
 	b.BorderSizePixel=2
 	b.Size=UDim2.new(1,0,0.055,0)
 end	
-add("作者:dotoyn4","a_0","TextLabel")
+add("作者:dotoyn4(白龙)","a_0","TextLabel")
 add("在脚下生成方块","a_1","TextButton")
 local button=cframe:WaitForChild("a_1")
 local turn=true
@@ -316,6 +316,7 @@ local a_9=cframe:WaitForChild("a_9")
 a_9.MouseButton1Click:Connect(function()
 	loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Ketamine-46055"))()
 end)
+
 
 
 
