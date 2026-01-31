@@ -380,7 +380,6 @@ a_10.MouseButton1Click:Connect(function()
 				v:Destroy()
 			end
 		end
-		game:GetService("Workspace").CurrentCamera.CameraSubject=pl.Character.HumanoidRootPart
 		a_10_0=true
 		a_10.Interactable=false
 		twwen:Create(a_10_1,TweenInfo.new(1),{Position=UDim2.new(0.11,0,0.246,0)}):Play()
@@ -389,5 +388,6 @@ a_10.MouseButton1Click:Connect(function()
 		a_10.Interactable=true
 	end
 end)
+
 
 
