@@ -389,5 +389,12 @@ a_10.MouseButton1Click:Connect(function()
 	end
 end)
 
-
+add("Tool复制","a_11","TextButton")
+local a_11=cframe:WaitForChild("a_11")
+a_11.MouseButton1Click:Connect(function()
+    local tool=game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Tool")
+    if tool then
+        tool:Clone().Parent=pl.Backpack
+    end
+end)
 
