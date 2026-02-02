@@ -451,21 +451,10 @@ a_11.MouseButton1Click:Connect(function()
 		b=z^2
 	end
 	b=tostring(b)
+	a_11.Text="解题> "..b
 	
-	local key= pl.PlayerGui.Gameplay.AnswerGui.AnswerFrame.CenterFrame.InputFrame.Answer1.TriggerBtn.KeyText.Text
-	local key_2= pl.PlayerGui.Gameplay.AnswerGui.AnswerFrame.CenterFrame.InputFrame.Answer2.TriggerBtn.KeyText.Text
-	local key_3= pl.PlayerGui.Gameplay.AnswerGui.AnswerFrame.CenterFrame.InputFrame.Answer3.TriggerBtn.KeyText.Text
-	local key_4= pl.PlayerGui.Gameplay.AnswerGui.AnswerFrame.CenterFrame.InputFrame.Answer4.TriggerBtn.KeyText.Text
-	if key==b then
-		key.TextColor3=Color3.new(0, 1, 0)
-	elseif key_2==b then
-		key_2.TextColor3=Color3.new(0, 1, 0)
-	elseif key_3==b then
-		key_3.TextColor3=Color3.new(0, 1, 0)
-	elseif key_4==b then
-		key_4.TextColor3=Color3.new(0, 1, 0)
-	end	
 end)
+
 
 
 
