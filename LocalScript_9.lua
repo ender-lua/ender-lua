@@ -394,7 +394,7 @@ end)
 add("解题","a_11","TextButton")
 local a_11=cframe:WaitForChild("a_11")
 a_11.MouseButton1Click:Connect(function()
-	local am=pl.LocalPlayer.PlayerGui.Gameplay.TopicGui.TopicFrame.CenterFrame.TopicLabel.Text
+	local am=tostring(game:GetService("Players").LocalPlayer.PlayerGui.Gameplay.TopicGui.TopicFrame.CenterFrame.TopicLabel.Text)
 	local stop=false
 	local e={}
 	for i=1,#am do
@@ -466,6 +466,7 @@ a_11.MouseButton1Click:Connect(function()
 		key_4.TextColor3=Color3.new(0, 1, 0)
 	end	
 end)
+
 
 
 
